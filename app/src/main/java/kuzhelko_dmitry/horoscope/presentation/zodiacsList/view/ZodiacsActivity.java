@@ -28,7 +28,6 @@ import kuzhelko_dmitry.horoscope.utils.Constants;
 
 public class ZodiacsActivity extends MvpAppCompatActivity implements IZodiacsView {
 
-    private LinearLayoutManager layoutManager;
     private ZodiacsAdapter adapter;
     private Toolbar toolbar;
 
@@ -69,12 +68,7 @@ public class ZodiacsActivity extends MvpAppCompatActivity implements IZodiacsVie
     }
 
     private void adapterClickListener() {
-        adapter.setClickListener(new ZodiacsAdapter.ClickListener() {
-            @Override
-            public void onItemClick(Zodiac zodiac) {
-                presenter.OnItemClick(zodiac);
-            }
-        });
+        adapter.setClickListener(zodiac -> presenter.OnItemClick(zodiac));
     }
 
     @Override
