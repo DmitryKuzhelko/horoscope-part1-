@@ -26,7 +26,6 @@ public class ZodiacsAdapter extends RecyclerView.Adapter<ZodiacsAdapter.ViewHold
     }
 
 
-
     public void setClickListener(ClickListener clickListener) {
         this.clickListener = clickListener;
     }

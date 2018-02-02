@@ -67,10 +67,4 @@ public class Zodiac extends RealmObject {
         this.description = description;
     }
 
-    @Override
-    public String toString() {
-        return "Zodiac{" +
-                ", title='" + title + '\'' + '\n' +
-                '}';
-    }
 }
